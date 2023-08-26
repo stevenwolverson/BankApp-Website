@@ -88,7 +88,7 @@ tabsContainer.addEventListener('click', function (e) {
 // Menu fade animation
 
 const handleHover = function (e) {
-  if (e.target.classLis.contains('nav__link')) {
+  if (e.target.classList.contains('nav__link')) {
     const link = e.target;
     const siblings = link.closest('.nav').querySelectorAll('.nav__link');
     const logo = link.closest('.nav').querySelector('img');
