@@ -200,7 +200,7 @@ const slider = function () {
 
   const activateDot = function (slide) {
     document
-      .querySelectorAll('.dots_dot')
+      .querySelectorAll('.dots__dot')
       .forEach(dot => dot.classList.remove('dots__dot--active'));
 
     document
@@ -219,7 +219,7 @@ const slider = function () {
     if (currentSlide === maxSlide - 1) {
       currentSlide = 0;
     } else {
-      currentSlide--;
+      currentSlide++;
     }
     goToSlide(currentSlide);
     activateDot(currentSlide);
